@@ -55,7 +55,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  display: block;
   max-width: 1180px;
   width: 100%;
   height: 90vh;
@@ -132,13 +132,18 @@ body {
 .pop-wrap .pop-menu ul {
   position: relative;
   display: block;
-  margin-left: 20px;
 }
 .pop-wrap .pop-menu ul li {
   position: relative;
   display: block;
   font-size: 20px;
   line-height: 50px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.pop-wrap .pop-menu ul li.on {
+  color: #fff;
+  background-color: #ee0700;
 }
 .pop-wrap .pop-list {
   position: relative;
@@ -147,6 +152,8 @@ body {
   width: calc(100% - 220px);
   height: calc(90vh - 117px);
   background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .pop-wrap .pop-list > ul.pl-title {
   position: relative;

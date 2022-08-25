@@ -90,7 +90,8 @@ $(document).ready(function () {
     // 사이트목록펼치기
 
     let fsListButtonSet = $('.fn-family-site>button');
-    let SiteList = $('.fn-family-site>ul.fs-list')
+    let SiteList = $('.fn-family-site>ul.fs-list');
+    let SiteName = $('.fs-list>li>a>span')
 
     $.each(fsListButtonSet, function (index) {
         $(this).click(function () {
@@ -99,6 +100,15 @@ $(document).ready(function () {
             } else {
                 SiteList.eq(index).addClass('on')
             }
+        })
+    })
+
+    let popMenuSet = $('.pop-menu>ul>li');
+    let popListSet = $('.pop-list >.pl-title');
+
+    $.each(popMenuSet, function(index) {
+        $(this).click(function (){
+            popMenuSet.addClass('on')
         })
     })
 });

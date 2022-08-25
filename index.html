@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <!--[if lt IE 9]> 
+      <script src="js/html5shiv.js"></script>
+  <![endif]-->
+    <script src="js/respond.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css"> <!-- 사용자 지정 -->
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 팝업메뉴 -->
+    <div class="pop-wrap">
+        <div class="pop-head">
+            <h2>전체메뉴</h2>
+        </div>
+        <div class="pop-link clearfix">
+            <ul>
+                <li><a href="">공동인증서안내</a></li>
+                <li><a href="">홈페이지도움센터</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">모바일서비스안내</a></li>
+            </ul>
+        </div>
+        <div class="pop-menu clearfix">
+            <ul>
+                <li>민원여기요</li>
+                <li>건강iN</li>
+                <li>정책센터</li>
+                <li>국민과함께</li>
+                <li>공단요모조모</li>
+                <li>기타</li>
+            </ul>
+        </div>
+        <div class="pop-list">
+            <ul class="pl-title">
+                <li><a href="" class="pl-subtitle">민원안내</a>
+                    <ul class="pl-content clearfix">
+                        <li>
+                            <a href="">개인 민원안내</a>
+                            <ul class="clearfix">
+                                <li>민원서비스 이용 방법</li>
+                                <li>민원업무 목록</li>
+                                <li>직장가입자 피부양자 취득상실 신고</li>
+                            </ul>
+                        </li>
+                        <li><a href="">사업장 민원안내</a>
+                            <ul class="clearfix">
+                                <li>민원업무목록</li>
+                            </ul>
+                        </li>
+                        <li><a href="">자주 묻는 질문</a>
+                            <ul class="clearfix">
+                                <li>자주 묻는 질문</li>
+                                <li>시스템 이용 도우미</li>
+                            </ul>
+                        </li>
+                        <li><a href="">서식자료실</a></li>
+                        <li><a href="">장기요양 서식자료실 </a></li>
+                        <li><a href="">사업장 웹 민원서식 </a></li>
+                        <li><a href="">무인민원발급기 설치장소 </a></li>
+                    </ul>
+                </li>
+
+                <li><a href="" class="pl-subtitle">개인민원</a>
+                    <ul class="pl-content clearfix">
+                        <li><a href=""> 개인민원업무 목록</a></li>
+                        <li> <a href=""> 증명서 발급/확인</a>
+                            <ul>
+                                <li> <a href="">자격확인서</a></li>
+                                <li> <a href="">자격득실확인서</a></li>
+                                <li> <a href="">보험료 완납증명서</a></li>
+                                <li> <a href="">보험료 납부확인서</a></li>
+                                <li> <a href="">건강보험 본인부담금 확인서</a></li>
+                                <li> <a href="">기타징수금 납부확인서</a></li>
+                                <li> <a href="">차상위 본인부담 경감대상자 증명서</a></li>
+                                <li> <a href="">건강보험증 우편발급 신청</a></li>
+                                <li> <a href="">증명서 진위확인</a></li>
+                                <li> <a href="">증명서 팩스발급 처리결과 조회</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href=""> 자격조회</a>
+                            <ul>
+                                <li> <a href=""> 자격사항</a></li>
+                                <li> <a href="">급여정지사항</a></li>
+                                <li> <a href="">지역자격 취득변동사항</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href=""> 보험료 조회/신청</a>
+                            <ul>
+                                <li><a href="">지역보험료 조회</a></li>
+                                <li><a href="">지역보험료 고지/납부현황 조회</a></li>
+                                <li><a href="">직장보험료 조회</a></li>
+                                <li><a href="">홈페이지 납부 보험료 조회</a></li>
+                                <li><a href="">사회보험료 완납 조회</a></li>
+                                <li><a href="">건강보험 연말정산내역 조회</a></li>
+                                <li><a href="">4대 보험료 계산하기</a></li>
+                                <li><a href="">주택금융부채 공제 신청 및 조회</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href=""> 보험료 납부</a>
+                            <ul>
+                                <li> <a href="">보험료 납부</a></li>
+                                <li> <a href="">보험료 대납</a></li>
+                                <li> <a href="">자동이체 신청</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href=""> 보험료 고지서</a>
+
+                            <ul>
+                                <li><a href=""> 이메일 고지서 신청</a></li>
+                                <li><a href=""> 모바일 고지서 신청</a></li>
+                                <li><a href=""> 홈페이지 고지서 신청</a></li>
+                                <li><a href=""> 고지서 송달지 변경 신청</a></li>
+                                <li><a href=""> 보험료 고지서 재발급 신청</a></li>
+                                <li><a href=""> 홈페이지 고지내역 조회</a></li>
+                            </ul>
+
+
+
+                        </li>
+                        <li> <a href=""> 보험급여</a>
+
+                            <ul>
+                                <li> <a href=""> 진료받은 내용 및 신고</a></li>
+                                <li> <a href=""> 진료받은 내용 및 신고포상금 제도</a></li>
+                                <li> <a href=""> 임신/출산 진료비</a></li>
+                                <li> <a href=""> 난임시술대상자 잔여급여횟수 조회</a></li>
+                                <li> <a href=""> 치석제거 진료정보 조회</a></li>
+                                <li> <a href=""> 현금급여 지급내역 조회</a></li>
+                                <li> <a href=""> 산정특례 등록내역 조회</a></li>
+                                <li> <a href=""> 대여가능 보조기기 조회</a></li>
+                                <li> <a href=""> 분만취약지 재택의료 시범사업</a></li>
+                                <li> <a href=""> 요양비 청구</a></li>
+                                <li> <a href=""> 요양비 처방전</a></li>
+                                <li> <a href=""> 상병수당 신청</a></li>
+                            </ul>
+
+
+                        </li>
+                        <li> <a href=""> 환급금(지원금) 조회/신청</a>
+                            <ul>
+                                <li><a href=""> 환급금(지원금) 조회/신청</a></li>
+                                <li><a href=""> 환급금(지원금) 신청내역 조회</a></li>
+                                <li><a href=""> 환급금(지원금) 안내</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href=""> 건강검진</a>
+                            <ul>
+                                <li><a href=""> 건강검진대상 조회</a></li>
+                                <li><a href="">건강검진결과 조회</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href=""> 사업장 의료비 자료제공 동의</a></li>
+                        <li> <a href=""> 외국인 민원센터 예약</a></li>
+                        <li> <a href=""> 팩스 발송결과 조회</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="" class="pl-subtitle">사업장민원</a>
+                    <ul class="pl-content clearfix">
+                        <li><a href=""> 사업장민원업무 목록 </a></li>
+                        <li><a href=""> 조회/발급 </a>
+                            <ul>
+                                <li> <a href=""> 사업장직원 조회</a></li>
+                                <li> <a href=""> 사업장 적용 통보서</a></li>
+                                <li> <a href=""> 보험료 고지/납부현황 조회</a></li>
+                                <li> <a href=""> 보험료 산출내역 조회</a></li>
+                                <li> <a href=""> 보험료 납부확인서 발급</a></li>
+                                <li> <a href=""> 사회보험료 완납조회</a></li>
+                                <li> <a href=""> 보험료 환급금 조회/신청</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href=""> 보험료 납부 </a>
+                            <ul>
+                                <li><a href=""> 보험료 납부</a></li>
+                                <li><a href=""> 보험료 납부현황</a></li>
+                                <li><a href=""> 이메일 고지 신청</a></li>
+                                <li><a href=""> 모바일 고지 신청</a></li>
+                                <li><a href=""> 보험료 고지서 재발급 신청</a></li>
+                                <li><a href=""> 인터넷지로 납부</a></li>
+                                <li><a href=""> 자동이체 신청</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href=""> 증명서 진위확인 </a>
+                            <ul>
+                                <li><a href=""> 사업장 적용통보서 및 기타 징수금 납부 확인서</a></li>
+                                <li><a href=""> 기타(자격득실확인서 등)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""> EDI서비스 </a></li>
+                        <li><a href=""> 사업장 웹 민원서식 </a></li>
+                    </ul>
+                </li>
+
+                <li><a href="" class="pl-subtitle">상담문의</a>
+                    <ul class="pl-content clearfix">
+                        <li><a href="">상담문의안내</a></li>
+                        <li><a href=""> 개인 상담</a></li>
+                        <li><a href="">일반 상담</a></li>
+                        <li><a href=""> 칭찬해요/속상해요</a></li>
+                        <li><a href=""> 챗봇/채팅 상담</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="" class="pl-subtitle">신고센터</a>
+                    <ul class="pl-content clearfix">
+                        <li><a href="">
+                                부당청구 신고</a>
+
+                            <ul>
+                                <li><a href=""> 부당청구 신고안내</a></li>
+                                <li><a href=""> 부당청구 신고하기</a></li>
+                                <li><a href=""> 부당청구 신고결과조회</a></li>
+                                <li><a href=""> 거짓청구 요양기관 명단공표</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">익명신고(헬프라인)</a></li>
+                        <li><a href="">예산낭비신고</a>
+                            <ul>
+                                <li><a href=""> 예산낭비 신고안내</a></li>
+                                <li><a href=""> 예산낭비 신고/제안하기</a></li>
+                                <li><a href=""> 신고결과조회</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="">부패공익신고</a></li>
+                        <li><a href="">청탁금지위반신고</a></li>
+                        <li><a href="">1회용 주사기 등 재사용 신고</a>
+                            <ul>
+                                <li><a href=""> 1회용 주사기 등 재사용 신고안내</a></li>
+                                <li><a href=""> 1회용 주사기 등 재사용 신고하기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">불법개설기관신고</a>
+                            <ul>
+                                <li><a href=""> 불법개설기관 신고안내</a></li>
+                                <li><a href=""> 불법개설기관 신고하기</a></li>
+                                <li><a href=""> 불법개설기관 신고결과조회</a></li>
+                            </ul>
+                        </li>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="header-top">
+                <div class="inner clearfix">
+                    <div class="webcontrol clearfix">
+                        <div class="sc-size clearfix">
+                            <span>화면</span>
+                            <button class="up-btn"></button>
+                            <button class="down-btn"></button>
+                        </div>
+                        <div class="sv-size clearfix">
+                            <span>소리</span>
+                            <button class="up-btn"></button>
+                            <button class="down-btn"></button>
+                            <button class="volume-speaker"></button>
+                        </div>
+                    </div>
+                    <div class="user-set">
+                        <ul class="clearfix">
+                            <li><a href="">로그인</a></li>
+                            <li><a href="">회원가입</a></li>
+                            <li><a href="">인증서안내</a></li>
+                            <li><a href="">전체메뉴</a></li>
+                            <li><a href="" class="langButton">Language</a>
+                                <span class="lang-sub">
+                                    <p>English</p>
+                                    <p>中文</p>
+                                    <p>日本</p>
+                                    <p>Tiếng Việt</p>
+                                </span>
+                            </li>
+                            <li><a href="">분야별업무사이트</a>
+                                <span class="part-site">
+                                    <button><a class="site-A"></a>
+                                        <span>
+                                            사회보험<br>
+                                            통합징수 포털
+                                        </span>
+                                    </button>
+                                    <button><a class="site-B"></a>
+                                        <span>
+                                            노인장기<br>
+                                            요양보험
+                                        </span>
+                                    </button>
+                                    <button><a class="site-C"></a>
+                                        <span>
+                                            요양기관<br>
+                                            정보마당
+                                        </span>
+                                    </button>
+                                    <button><a class="site-D"></a>
+                                        <span>
+                                            EDI <br>
+                                            서비스
+                                        </span>
+                                    </button>
+                                    <button><a class="site-E"></a>
+                                        <span>
+                                            건강관리 <br>
+                                            포털시스템
+                                        </span>
+                                    </button>
+                                    <button><a class="site-F"></a>
+                                        <span>
+                                            건강보험자료 <br>
+                                            공유서비스
+                                        </span>
+                                    </button>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="inner clearfix">
+                    <h1><a href="#" class="logo"></a></h1>
+                    <nav class="gnb clearfix">
+                        <ul class="gnb-menu">
+                            <li><a href="" class="gnb-list">민원여기요</a>
+                                <ul class="submenu">
+                                    <li>민원안내</li>
+                                    <li>개인민원</li>
+                                    <li>사업장민원</li>
+                                    <li>상담문의</li>
+                                    <li>신고센터</li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="gnb-list">건강iN</a>
+                                <ul class="submenu">
+                                    <li>나의건강관리</li>
+                                    <li>가족건강관리</li>
+                                    <li>건강프로그램</li>
+                                    <li>건강생활</li>
+                                    <li>건강자료실</li>
+                                    <li>검진기관/병원찾기</li>
+                                    <li>국민건강알람</li>
+                                    <li>건강생활실천지원금제</li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="gnb-list">정책센터</a>
+                                <ul class="submenu">
+                                    <li>국민건강보험</li>
+                                    <li>노인장기요양보험</li>
+                                    <li>정책홍보관</li>
+                                    <li>사회보험통합징수</li>
+                                    <li>권리구제제도</li>
+                                    <li>법령정보 건강Law</li>
+                                    <li>보건의료인력지원전문기관(상담센터)</li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="gnb-list">국민과함께</a>
+                                <ul class="submenu">
+                                    <li>정보공개</li>
+                                    <li>경영공시</li>
+                                    <li>국민참여</li>
+                                    <li>뉴스/소식</li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="gnb-list">공단요모조모</a>
+                                <ul class="submenu">
+                                    <li>공단소개</li>
+                                    <li>조직 및 인원</li>
+                                    <li>홍보센터</li>
+                                    <li>경영철학</li>
+                                    <li>사회공헌</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <span class="line L1"></span>
+                        <ul class="gnb-hidden">
+                            <li><strong>자주찾는메뉴</strong></li>
+                            <li><a href="">건강보험제도유형</a></li>
+                            <li><a href="">자격취득/가입진료</a></li>
+                            <li><a href="">투약정보검진대상조회</a></li>
+                        </ul>
+                        <span class="line L2"></span>
+                        <span class="line L3"></span>
+                    </nav>
+                    <div class="user-menu clearfix">
+                        <button class="toggle-search"></button>
+                        <button class="toggle-menu"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- search -->
+        <div class="search">
+            <div class="inner">
+                <div class="search-area">
+                    <input type="text" class="sb-form" placeholder="무엇을 찾고 계시나요?"></input>
+                    <a class="sb-btn"></a>
+                </div>
+                <div class="search-banner">
+                    <div iv class="swiper-container sw-search-banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="" class="swsb-01"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-02"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-03"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-04"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-05"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-06"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-07"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-08"></a></div>
+                            <div class="swiper-slide"><a href=" " class="swsb-09"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-10"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-11"></a></div>
+                            <div class="swiper-slide"><a href="" class="swsb-12"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- visitor-menu -->
+        <div class="visitor-menu">
+            <div class="inner">
+                <div class="vm-title">
+                    <h3>방문자별 맞춤 메뉴</h3>
+                    <span class="vm-visitor">
+                        <button class="personal">개인</button>
+                        <button class="business">사업장</button>
+                    </span>
+                    <span class="vm-more"><a href="">더보기+</a></span>
+                </div>
+                <div class="vm-list">
+                    <ul class="psn-visit clearfix">
+                        <li><a href=""><span><img src="images/ico-qualification.png" alt=""></span>
+                                <p>자격득실<br>확인서발급</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-burden.png" alt=""></span>
+                                <p>보험료<br>납부확인서</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-refund.png" alt=""></span>
+                                <p>환급금<br>조회/신청</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-insurance.png" alt=""></span>
+                                <p>보험료<br>조회/납부</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-calculation.png" alt=""></span>
+                                <p>보험료<br>계산기</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-transfer.png" alt=""></span>
+                                <p>재난적의료비<br>지원안내</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-checkups.png" alt=""></span>
+                                <p>건강검진<br>대상조회</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-family.png" alt=""></span>
+                                <p>가족<br>건강관리</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-company-inquiry.png" alt=""></span>
+                                <p>민원<br>서식자료실</p>
+                            </a></li>
+                    </ul>
+                    <ul class="bsn-visit clearfix">
+                        <li><a href=""><span><img src="images/ico-staff-search.png" alt=""></span>
+                                <p>사업장<br>직원조회</p>
+                            </a></li>
+                        <li><a href=""><span><img src="images/ico-inform.png" alt=""></span>
+                                <p>사업장적용<br>통보서</p>
+                            </a></li>
+                        <li><a href=""><span class="gosite"><img src="images/ico-amount-money.png" alt=""></span>
+                                <p>보험료<br>고지내역조회</p>
+                            </a></li>
+                        <li><a href=""><span class="gosite"><img src="images/ico-insurance.png" alt=""></span>
+                                <p>보험료<br>고지납부현황</p>
+                            </a></li>
+                        <li><a href=""><span class="gosite"><img src="images/ico-insurance-payment.png" alt=""></span>
+                                <p>4대보험<br>완납증명서</p>
+                            </a></li>
+                        <li><a href=""><span class="gosite"><img src="images/ico-edi.png" alt=""></span>
+                                <p>건강보험<br>납부확인서</p>
+                            </a></li>
+                        <li><a href=""><span class="gosite"><img src="images/ico-company-form.png" alt=""></span>
+                                <p>연금<br>납부확인서</p>
+                            </a></li>
+                        <li><a href=""><span class="gosite"><img src="images/ico-company-certificate.png" alt=""></span>
+                                <p>증명서 발급<br>사실 확인</p>
+                            </a></li>
+                        <li><a href=""><span class="gosite"><img src="images/ico-company-inquiry.png" alt=""></span>
+                                <p>보험료<br>산출내역신청</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <div class="inner">
+                <div class="banner-top">
+                    <div class="bt-control">
+                        <span class="specific-nb">1</span>
+                        <span class="total-nb"> / 1</span>
+                    </div>
+                </div>
+                <div class="banner-bottom">
+                    <div class="swiper-container sw-b-bottom">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="">
+                                    <p>안녕하세요</p>
+                                    <p>공단홈페이지방문을 환영합니다.</p>
+                                </a></div>
+                        </div>
+                        <button class="sw-b-bottom-prev"></button>
+                        <button class="sw-b-bottom-next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hw -->
+        <div class="hw">
+            <!-- hw-news -->
+            <div class="hw-news">
+                <div class="inner clearfix">
+                    <div class="news-notice">
+                        <ul>
+                            <li><a href="" class="n-notice01">공지사항</a></li>
+                            <li><a href="" class="n-notice02">채용공고</a></li>
+                            <li><a href="" class="n-notice03">보도자료</a></li>
+                            <li><a href="" class="n-notice04">입찰공고</a></li>
+                            <li><a href="" class="n-notice05">경영공시</a></li>
+                        </ul>
+                    </div>
+                    <div class="health-info">
+                        <h3 class="hi-title">건강정보</h3>
+                        <ul>
+                            <li class="h-info01"><a href="" class="h-info01-a">가까운 병의원 찾기</a></li>
+                            <li class="h-info02"><a href="" class="h-info02-b">검진기관 찾기</a></li>
+                            <li class="h-info03"><a href="" class="h-info03-c">건강뉴스</a></li>
+                            <li class="h-info04"><a href="" class="h-info04-d">건강웹툰</a></li>
+                        </ul>
+                    </div>
+                    <div class="guarantee">
+                        <div class="gurantee-top">
+                            <h3>보장성강화</h3>
+                            <p>병원비 걱정없는 든든한 나라<br>
+                                건강보험 보장성강화 대책을 알아보세요!</p>
+                        </div>
+                        <div class="gurantee-bottom">
+                            <h3>건강보험연구원</h3>
+                            <p>Health Insurance Research<br>
+                                Institute(HIRI)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hw-events -->
+            <div class="hw-events">
+                <div class="inner clearfix">
+                    <div class="main-policy">
+                        <div class="mp-up">
+                            <p>알아두면 건강해지는 건강보험공단<br>
+                                <strong>주요정책</strong></p>
+                        </div>
+                        <div class="answers">
+                            <a>
+                                <p>소중한 나의 가족! 건강관리 쉽게 하는 방법은 없을까요?</p>
+                                <div class="answer-A">
+                                    <strong>가족건강관리</strong>
+                                    <span>서비스를 확인해보세요!</span>
+                                </div>
+                            </a>
+                            <a>
+                                <p>내가 받는 건강 보험료 혜택! 얼마나 될까요?</p>
+                                <div class="answer-B">
+                                    <strong>내가 낸 보험료 혜택</strong>
+                                    <span>서비스를 확인해보세요!</span>
+                                </div>
+                            </a>
+                            <a>
+                                <p>공단은 지역사회에서 어떤 일을 할까요?</p>
+                                <div class="answer-C">
+                                    <strong>지역사회</strong><span>에서</span>
+                                    <span>공단의 역할을 확인해 보세요!</span>
+                                </div>
+                            </a>
+                            <a>
+                                <p>내 건강보험료는 어떻게 책정되었을까요?</p>
+                                <div class="answer-D">
+                                    <strong>보험료 부과 및 산정</strong>
+                                    <span>기준을 확인해 보세요!</span>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="events">
+                        <h3>이벤트</h3>
+                        <div class="swiper-container sw-events">
+                            <div class="swe-pg"></div>
+                            <div class="swe-control">
+                                <div class="swe-control-prev"></div>
+                                <div class="swe-control-pnp"></div>
+                                <div class="swe-control-next"></div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="" class="events01"></a></div>
+                                <div class="swiper-slide"><a href="" class="events02"></a></div>
+                                <div class="swiper-slide"><a href="" class="events03"></a></div>
+                                <div class="swiper-slide"><a href="" class="events04"></a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- hw-about -->
+            <div class="hw-about">
+                <div class="inner clearfix">
+                    <div class="health-alert clearfix">
+                        <h3>국민건강 알람서비스</h3>
+                        <a href="" class="ha-date">
+                            <p>2022.06.30 </p><span></span>
+                            <br>
+                            <p>전국기준</p>
+                        </a>
+                        <div class="ha-graph-tab">
+                            <div class="graph-main clearfix">
+                                <div class="tab-box tbg-01"><span>관심</span></div>
+                                <div class="tab-box tbg-02"><span>주의</span></div>
+                                <div class="tab-box tbg-03"><span>경고<br><strong>80</strong></span>
+                                </div>
+                                <div class="tab-box tbg-04"><span>위험</span></div>
+                                <div class="tab-box tbg-05"><span>경고</span></div>
+                            </div>
+                            <div class="graph-button">
+                                <button>감기</button>
+                                <button>눈병</button>
+                                <button>식중독</button>
+                                <button>천식</button>
+                                <button>피부염</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="about-intro clearfix">
+                        <div class="organization">
+                            <h3>조직도</h3>
+                            <p>국민건강보험공단의<br>
+                                부서별 조직도를 확인해보세요.</p>
+                        </div>
+                        <div class="where-is-center">
+                            <h3>지사찾기</h3>
+                            <p>가까운 지사를 방문하시면<br>
+                                민원업무를 처리하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="promote">
+                        <h3>홍보존</h3>
+                        <div class="swiper-container sw-promo">
+                            <div class="swp-pg"></div>
+                            <div class="swp-control">
+                                <div class="swp-control-prev"></div>
+                                <div class="swp-control-pnp"></div>
+                                <div class="swp-control-next"></div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="" class="promo01"></a></div>
+                                <div class="swiper-slide"><a href="" class="promo02"></a></div>
+                                <div class="swiper-slide"><a href="" class="promo03"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hw-cs -->
+            <div class="hw-cs">
+                <div class="inner">
+                    <div class="cs-center clearfix">
+                        <h3>고객센터</h3>
+                        <a href="" class="csc-left">
+                            <div class="cscl-content">
+                                <span><strong>1577-1000</strong><br>
+                                    (해외이용 : 82-33-811-2001)</span>
+                                <p><strong>업무 시간 09:00~18:00</strong><br>
+                                    (이용료: 발신자 부담)</p>
+                            </div>
+                        </a>
+                        <a href="" class="csc-right">
+                            <p>외국인 민원센터</p>
+                        </a>
+                    </div>
+                    <div class="news-register">
+                        <h3>소식지 신청/해지</h3>
+                        <a href="">
+                            <span>더 빠르게<br>
+                                건강보험 정책과<br>
+                                정보를 제공합니다.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="app-download clearfix">
+                        <h3> APP 다운로드</h3>
+                        <a class="qr-code-AND"><span>Android</span></a>
+                        <a class="qr-code-IOS"><span>iOS</span></a>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="inner">
+                <div class="footer-navi clearfix">
+                    <ul class="fn-list">
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">영상정보처리기기 운영지침</a></li>
+                        <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="">온라인도우미</a></li>
+                    </ul>
+                    <div class="fn-family">
+                        <div class="fn-family-site in-site clearfix">
+                            <button>내부관련사이트</button><span>이동</span>
+                            <ul class="fs-list">
+                                <li><a href=""><span>노인장기요양보험</span></a></li>
+                                <li><a href=""><span>사회보험징수포털</span></a></li>
+                                <li><a href=""><span>요양기관정보마당 사이트</span></a></li>
+                                <li><a href=""><span>국민건강보험 EDI서비스</span></a></li>
+                                <li><a href=""><span>건강관리포털시스템</span></a></li>
+                                <li><a href=""><span>국가건강검진교육연수원</span></a></li>
+                                <li><a href=""><span>국민건강보험자료 공유서비스</span></a></li>
+                                <li><a href=""><span>국민건강보험자료 인재개발원</span></a></li>
+                                <li><a href=""><span>국민건강보험자료 전문도서관</span></a></li>
+                                <li><a href=""><span>국민건강보험공단 공단가족</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="fn-family-site out-site clearfix">
+                            <button>관련사이트</button><span>이동</span>
+                            <ul class="fs-list">
+                                <li><a href=""><span>서울요양원</span></a></li>
+                                <li><a href=""><span>일산병원</span></a></li>
+                                <li><a href=""><span>행정정보공동이용센터</span></a></li>
+                                <li><a href=""><span>국민연금</span></a></li>
+                                <li><a href=""><span>근로복지공단</span></a></li>
+                                <li><a href=""><span>보건복지부</span></a></li>
+                                <li><a href=""><span>국민권익위원회</span></a></li>
+                                <li><a href=""><span>인터넷 지로납부</span></a></li>
+                                <li><a href=""><span>건강보험심사평가원</span></a></li>
+                                <li><a href=""><span>정부24</span></a></li>
+                                <li><a href=""><span>대한민국 법원 전자가족관계</span></a></li>
+                                <li><a href=""><span>보건복지부 인터넷채팅상담</span></a></li>
+                                <li><a href=""><span>보건복지부 통계포털</span></a></li>
+                                <li><a href=""><span>한국사회보장정보원</span></a></li>
+                                <li><a href=""><span>고용보험 인터넷서비스</span></a></li>
+                                <li><a href=""><span>고용산재보험 토탈서비스</span></a></li>
+                                <li><a href=""><span>한국보건의료연구원</span></a></li>
+                                <li><a href=""><span>한국의료분쟁조정중재원</span></a></li>
+                                <li><a href=""><span>하이코리아</span></a></li>
+                                <li><a href=""><span>국민건강보험 동우회</span></a></li>
+                                <li><a href=""><span>4대사회보험 정보연계센터</span></a></li>
+                                <li><a href=""><span>행정안전부 국민재난안전포털</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="fi-text">
+                        <p>본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+                        </p>
+                        <p>26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터 :1577-1000(발신자 부담) 업무시간 : 09시~18시(월~금)
+                        </p>
+                        <p>Copyright @ 2020 by National Health Insurance Service. All rights reserved.
+                        </p>
+                    </div>
+                    <ul class="certification-list clearfix">
+                        <li><a href="" class="c-list1"></a></li>
+                        <li><a href="" class="c-list2"></a></li>
+                        <li><a href="" class="c-list3"></a></li>
+                        <li><a href="" class="c-list4"></a></li>
+                    </ul>
+                    <ul class="sns-link clearfix">
+                        <li><a href="" class="s-link1"></a></li>
+                        <li><a href="" class="s-link2"></a></li>
+                        <li><a href="" class="s-link3"></a></li>
+                        <li><a href="" class="s-link4"></a></li>
+                        <li><a href="" class="s-link5"></a></li>
+                        <li><a href="" class="s-link6"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

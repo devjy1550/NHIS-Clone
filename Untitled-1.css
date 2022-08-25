@@ -1,0 +1,33 @@
+.mp-up {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+}
+.mp-up::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url("../images/ico-notice.png") no-repeat center;
+  background-size: cover;
+}
+.mp-up p {
+  position: relative;
+  display: inline-block;
+  font-size: 19px;
+  color: #3a3a4a;
+  padding-left: 50px;
+}
+.mp-up p strong {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a3a4a;
+}/*# sourceMappingURL=Untitled-1.css.map */

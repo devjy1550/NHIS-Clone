@@ -49,12 +49,139 @@ body {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+/* Popup-Menu */
+.popup-wrap {
+=======
+/* modal */
+.modal-wrap {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: "Open Sans", Sans-serif;
+  z-index: 999999999999999;
+}
+.modal-wrap .modal-content {
+>>>>>>> 9b3aac6 (업데이트)
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+<<<<<<< HEAD
+=======
+  display: block;
+  width: 560px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  border: 4px solid #0c4da2;
+}
+.modal-wrap .modal-content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -62px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: url("../images/MYLG.png") no-repeat center;
+  background-size: contain;
+}
+.modal-wrap .modal-content .modal-notice {
+  position: relative;
+  display: block;
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+.modal-wrap .modal-content .modal-notice p {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.modal-wrap .modal-content .modal-notice span {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: rgb(137, 137, 137);
+  text-align: center;
+}
+.modal-wrap .modal-content .modal-desc {
+  position: relative;
+  display: block;
+  width: calc(100% - 40px);
+  height: calc(100% - 240px);
+  background-color: #d0dfef;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+.modal-wrap .modal-content .modal-desc span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  color: #d0dfef;
+  text-align: center;
+  background-color: #0c4da2;
+}
+.modal-wrap .modal-content .modal-desc .modal-comments {
+  position: absolute;
+  height: 100px;
+  display: block;
+  margin-top: 39px;
+  margin-left: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-wrap .modal-content .modal-desc .modal-comments li {
+  list-style: square;
+}
+.modal-wrap .modal-content .modal-close {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: calc(60% - 40px);
+  height: 50px;
+  border-radius: 20px;
+  font-size: 22px;
+  line-height: 50px;
+  background-color: #444;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* Popup-Menu */
 .popup-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+>>>>>>> 9b3aac6 (업데이트)
   display: none;
   max-width: 1180px;
   width: 100%;
@@ -1537,7 +1664,7 @@ body {
   width: calc(100% - 80px);
   font-size: 21px;
   font-weight: 700;
-  color: #3A3A4A;
+  color: #3a3a4a;
   margin-bottom: 17px;
 }
 .wrap .hw .hw-events .inner .events .sw-events {
@@ -1656,7 +1783,7 @@ body {
   display: block;
   font-size: 21px;
   font-weight: 700;
-  color: #3A3A4A;
+  color: #3a3a4a;
   margin-bottom: 17px;
   cursor: pointer;
 }
@@ -1794,7 +1921,7 @@ body {
   display: block;
   font-size: 21px;
   font-weight: 700;
-  color: #3A3A4A;
+  color: #3a3a4a;
   margin-bottom: 17px;
 }
 .wrap .hw .hw-about .inner .about-intro .organization p {
@@ -1820,7 +1947,7 @@ body {
   display: block;
   font-size: 21px;
   font-weight: 700;
-  color: #3A3A4A;
+  color: #3a3a4a;
   margin-bottom: 17px;
 }
 .wrap .hw .hw-about .inner .about-intro .where-is-center p {
@@ -1850,7 +1977,7 @@ body {
   width: calc(100% - 80px);
   font-size: 21px;
   font-weight: 700;
-  color: #3A3A4A;
+  color: #3a3a4a;
   margin-bottom: 17px;
 }
 .wrap .hw .hw-about .inner .promote .sw-promo {

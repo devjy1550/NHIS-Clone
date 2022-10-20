@@ -939,6 +939,9 @@ body {
   padding-left: 20px;
   font-size: 18px;
 }
+.wrap .search .inner .search-area .sb-form:focus {
+  outline: none;
+}
 .wrap .search .inner .search-area .sb-btn {
   position: absolute;
   top: 50%;

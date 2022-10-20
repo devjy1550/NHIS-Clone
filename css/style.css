@@ -25,8 +25,7 @@ html {
 }
 
 body {
-  font-family: "NBG", "나눔바른고딕", "Malgun Gothic", "맑은 고딕", Dotum,
-    "돋움", sans-serif;
+  font-family: "NBG", "나눔바른고딕", "Malgun Gothic", "맑은 고딕", Dotum, "돋움", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -74,6 +73,9 @@ body {
   background-color: white;
   border-radius: 20px;
   border: 4px solid #0c4da2;
+}
+.modal-wrap .modal-content.on {
+  display: block;
 }
 .modal-wrap .modal-content::before {
   content: "";
@@ -580,68 +582,29 @@ body {
 .wrap .header .header-top .inner .user-set > ul > li:last-child > a.partSite {
   font-size: 0;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li:last-child
-  > a.partSite
-  > span {
+.wrap .header .header-top .inner .user-set > ul > li:last-child > a.partSite > span {
   position: relative;
   display: inline-block;
   font-size: 13px;
   margin-right: 5px;
   color: #d7021b;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li:last-child
-  > a.partSite
-  .pu-arrow {
+.wrap .header .header-top .inner .user-set > ul > li:last-child > a.partSite .pu-arrow {
   position: relative;
   display: inline-block;
   font-size: 13px;
   padding: 3px 0;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li:nth-child(5)
-  > a.langButton {
+.wrap .header .header-top .inner .user-set > ul > li:nth-child(5) > a.langButton {
   font-size: 0;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li:nth-child(5)
-  > a.langButton
-  > span {
+.wrap .header .header-top .inner .user-set > ul > li:nth-child(5) > a.langButton > span {
   position: relative;
   display: inline-block;
   font-size: 13px;
   margin-right: 5px;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li:nth-child(5)
-  > a.langButton
-  .pu-arrow {
+.wrap .header .header-top .inner .user-set > ul > li:nth-child(5) > a.langButton .pu-arrow {
   position: relative;
   display: inline-block;
   font-size: 13px;
@@ -710,94 +673,31 @@ body {
   height: 54px;
   border-radius: 18px;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li
-  .part-site
-  > button
-  > a.site-A {
+.wrap .header .header-top .inner .user-set > ul > li .part-site > button > a.site-A {
   background: #f16669 url("../images/site-list-ico01.png") no-repeat center;
   background-size: auto;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li
-  .part-site
-  > button
-  > a.site-B {
+.wrap .header .header-top .inner .user-set > ul > li .part-site > button > a.site-B {
   background: #bf9d83 url("../images/site-list-ico02.png") no-repeat center;
   background-size: auto;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li
-  .part-site
-  > button
-  > a.site-C {
+.wrap .header .header-top .inner .user-set > ul > li .part-site > button > a.site-C {
   background: #4cc771 url("../images/site-list-ico03.png") no-repeat center;
   background-size: auto;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li
-  .part-site
-  > button
-  > a.site-D {
+.wrap .header .header-top .inner .user-set > ul > li .part-site > button > a.site-D {
   background: #658dd0 url("../images/site-list-ico04.png") no-repeat center;
   background-size: auto;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li
-  .part-site
-  > button
-  > a.site-E {
+.wrap .header .header-top .inner .user-set > ul > li .part-site > button > a.site-E {
   background: #58606b url("../images/site-list-ico05.png") no-repeat center;
   background-size: auto;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li
-  .part-site
-  > button
-  > a.site-F {
+.wrap .header .header-top .inner .user-set > ul > li .part-site > button > a.site-F {
   background: #9385dd url("../images/site-list-ico06.png") no-repeat center;
   background-size: auto;
 }
-.wrap
-  .header
-  .header-top
-  .inner
-  .user-set
-  > ul
-  > li
-  .part-site
-  > button
-  > span {
+.wrap .header .header-top .inner .user-set > ul > li .part-site > button > span {
   position: absolute;
   display: block;
   bottom: -14px;
@@ -878,14 +778,7 @@ body {
 .wrap .header .header-bottom .inner .gnb > ul.gnb-menu li a.gnb-list:hover {
   color: #ee0700;
 }
-.wrap
-  .header
-  .header-bottom
-  .inner
-  .gnb
-  > ul.gnb-menu
-  li
-  a.gnb-list:hover::before {
+.wrap .header .header-bottom .inner .gnb > ul.gnb-menu li a.gnb-list:hover::before {
   display: block;
 }
 .wrap .header .header-bottom .inner .gnb > ul.gnb-menu li > ul.submenu {
@@ -911,39 +804,14 @@ body {
   letter-spacing: -0.5px;
   cursor: pointer;
 }
-.wrap
-  .header
-  .header-bottom
-  .inner
-  .gnb
-  > ul.gnb-menu
-  li
-  > ul.submenu
-  > li:first-child {
+.wrap .header .header-bottom .inner .gnb > ul.gnb-menu li > ul.submenu > li:first-child {
   margin-top: 20px;
 }
-.wrap
-  .header
-  .header-bottom
-  .inner
-  .gnb
-  > ul.gnb-menu
-  li
-  > ul.submenu
-  > li:hover {
+.wrap .header .header-bottom .inner .gnb > ul.gnb-menu li > ul.submenu > li:hover {
   color: #dd0c09;
   text-decoration: underline;
 }
-.wrap
-  .header
-  .header-bottom
-  .inner
-  .gnb
-  > ul.gnb-menu
-  li
-  > ul.submenu
-  > li
-  span.linkcon {
+.wrap .header .header-bottom .inner .gnb > ul.gnb-menu li > ul.submenu > li span.linkcon {
   position: relative;
   display: inline-block;
   padding: 6px;
@@ -1168,13 +1036,7 @@ body {
   float: left;
   line-height: 20px;
 }
-.wrap
-  .search
-  .inner
-  .search-banner
-  .sb-box
-  .sb-remote
-  .sw-sb-pgnt.swiper-pagination-fraction {
+.wrap .search .inner .search-banner .sb-box .sb-remote .sw-sb-pgnt.swiper-pagination-fraction {
   bottom: 0;
   font-weight: bold;
 }
@@ -1852,14 +1714,7 @@ body {
   margin: 0 15px;
   cursor: pointer;
 }
-.wrap
-  .hw
-  .hw-events
-  .inner
-  .events
-  .sw-events
-  .swe-control
-  .swe-control-pnp.swe-play {
+.wrap .hw .hw-events .inner .events .sw-events .swe-control .swe-control-pnp.swe-play {
   margin: 0 14px 0 16px;
   background: url("../images/slide-play.png") no-repeat center;
 }
@@ -1971,70 +1826,27 @@ body {
   height: 100%;
   margin: 0 auto;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-main
-  .tab-box.tbg-01 {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-main .tab-box.tbg-01 {
   background: url("../images/bg-health-noti-1.png") no-repeat center;
   background-size: contain;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-main
-  .tab-box.tbg-02 {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-main .tab-box.tbg-02 {
   background: url("../images/bg-health-noti-2.png") no-repeat center;
   background-size: contain;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-main
-  .tab-box.tbg-03 {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-main .tab-box.tbg-03 {
   background: url("../images/bg-health-noti-3.png") no-repeat center;
   background-size: contain;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-main
-  .tab-box.tbg-04 {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-main .tab-box.tbg-04 {
   background: url("../images/bg-health-noti-4.png") no-repeat center;
   background-size: contain;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-main
-  .tab-box.tbg-05 {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-main .tab-box.tbg-05 {
   background: url("../images/bg-health-noti-3.png") no-repeat center;
   background-size: contain;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-main
-  .tab-box
-  > span {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-main .tab-box > span {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -2047,16 +1859,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-main
-  .tab-box
-  > span
-  > strong {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-main .tab-box > span > strong {
   font-size: 21px;
 }
 .wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-button > button {
@@ -2071,47 +1874,19 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-button
-  > button:first-child {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-button > button:first-child {
   border-radius: 5px 0 0 5px;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-button
-  > button:last-child {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-button > button:last-child {
   border-right: 1px solid #ccc;
   border-radius: 0 5px 5px 0;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-button
-  > button.button-focus {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-button > button.button-focus {
   background-color: #44465c;
   color: #fff;
   border-color: #44465c;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .health-alert
-  .ha-graph-tab
-  .graph-button
-  > button:hover {
+.wrap .hw .hw-about .inner .health-alert .ha-graph-tab .graph-button > button:hover {
   background-color: #44465c;
   color: #fff;
   border-color: #44465c;
@@ -2252,14 +2027,7 @@ body {
   margin: 0 15px;
   cursor: pointer;
 }
-.wrap
-  .hw
-  .hw-about
-  .inner
-  .promote
-  .sw-promo
-  .swp-control
-  .swp-control-pnp.swp-play {
+.wrap .hw .hw-about .inner .promote .sw-promo .swp-control .swp-control-pnp.swp-play {
   margin: 0 14px 0 16px;
   background: url("../images/slide-play.png") no-repeat center;
 }
@@ -2527,14 +2295,7 @@ body {
   text-align: left;
   cursor: pointer;
 }
-.wrap
-  .footer
-  .inner
-  .footer-navi
-  .fn-family
-  .fn-family-site
-  > button
-  .pu-arrow {
+.wrap .footer .inner .footer-navi .fn-family .fn-family-site > button .pu-arrow {
   font-size: 18px;
   float: right;
 }
@@ -2574,16 +2335,7 @@ body {
   position: relative;
   display: block;
 }
-.wrap
-  .footer
-  .inner
-  .footer-navi
-  .fn-family
-  .fn-family-site
-  .fs-list
-  > li
-  > a
-  > span {
+.wrap .footer .inner .footer-navi .fn-family .fn-family-site .fs-list > li > a > span {
   position: relative;
   display: block;
   color: #6c6d73;
@@ -2591,16 +2343,7 @@ body {
   padding: 7px 0;
   font-size: 15px;
 }
-.wrap
-  .footer
-  .inner
-  .footer-navi
-  .fn-family
-  .fn-family-site
-  .fs-list
-  > li
-  > a
-  > span:hover {
+.wrap .footer .inner .footer-navi .fn-family .fn-family-site .fs-list > li > a > span:hover {
   color: #d7021b;
   text-decoration: underline;
 }
@@ -2684,8 +2427,7 @@ body {
   background: #fff url("../images/ico-facebook-small.png") no-repeat center;
 }
 .wrap .footer .inner .footer-info .sns-link li a.s-link3:hover {
-  background: #44465c url("../images/ico-facebook-small-on.png") no-repeat
-    center;
+  background: #44465c url("../images/ico-facebook-small-on.png") no-repeat center;
 }
 .wrap .footer .inner .footer-info .sns-link li a.s-link4 {
   background: #fff url("../images/ico-kakao-small.png") no-repeat center;
@@ -2704,4 +2446,4 @@ body {
 }
 .wrap .footer .inner .footer-info .sns-link li a.s-link6:hover {
   background: #44465c url("../images/ico-insta-small-on.png") no-repeat center;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
